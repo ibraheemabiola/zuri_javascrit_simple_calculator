@@ -1,0 +1,35 @@
+// program for a simple calculator
+let result;
+
+// take the operator input
+const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+// take the operand input
+var number1 = parseFloat(prompt('Enter first number: '));
+var number2 = parseFloat(prompt('Enter second number: '));
+
+switch(operator) {
+    case '+':
+         result = number1 + number2;
+        alert(`${number1} + ${number2} = ${result}`);
+        break;
+
+    case '-':
+         result = number1 - number2;
+       alert(`${number1} - ${number2} = ${result}`);
+        break;
+
+    case '*':
+         result = number1 * number2;
+        alert(`${number1} * ${number2} = ${result}`);
+        break;
+
+    case '/':
+         result = number1 / number2;
+        alert(`${number1} / ${number2} = ${result}`);
+        break;
+
+    default:
+        alert('Invalid operator');
+        break;
+}
